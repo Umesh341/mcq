@@ -1,0 +1,107 @@
+<html>
+    <head>
+<title> Quiz</title>
+<style>
+    .que{
+        color:red;
+        font-size: 10px;
+    }
+    #body{
+        font-size: 16px;
+        background: orange;
+        padding: 15px;
+    }
+    #score{
+        background-color:black;
+        color:white;
+    }
+    .first{
+        text-align: left;
+        margin: auto;
+        width:800px;
+        background-color: LightGray;
+    }
+    #Submit{
+        font-size: 20px;
+        border-radius: 10px;
+        margin: auto;
+    }
+    .ans{
+        font-size: 50px;
+    }
+    #sub{
+        margin: auto;
+        text-align: center;
+    }
+
+</style>
+    </head>
+    <body id="body">
+        <div class="first">
+            
+        
+        <h1>Physics</h1><br>
+        <p class="que">Qno.1 A particle in SHM will experience maximum force</p>
+        <input type="radio"name="ans1">At mean position</input>
+        <br />
+           <input type="radio"name="ans1" id="c1">At extreme position</input>
+           <br />
+   <input type="radio"name="ans1">At all position</input>
+   <br />
+      <input type="radio"name="ans1">None of the above</input>
+      
+      <br /><br />
+      <p class="que">Qno.2 What is the full form of SHM ?</p>
+   <input type="radio"name="ans2">Simple Hand Motion<br />
+   <input type="radio"name="ans2">Short Harmonic Motion</input><br />
+   <input type="radio"name="ans2"id="c2">Simple Harmonic Motion</input><br />
+   <input type="radio"name="ans2">Show Half Motion</text><br /><br />
+
+ <p class="que">Qno.3 The wave theory of light was given by </p>
+   <input type="radio"name="ans3"id="c3">Huygens</text><br />
+   <input type="radio"name="ans3"> Nikola Tesla</text><br />
+   <input type="radio"name="ans3"> Albert Einstein</input><br />
+   <input type="radio"name="ans3">  Planck <br /></text><br />
+
+
+    <br /><br />
+     <p class="que">Qno.4 The angular speed of a body changes from 16 rad/sec to 25 rad/sec without applying torque but due to change in its moment of inertia. The ratio of radii of gyration in two cases will be </p>
+   <input type="radio"name="ans4">16:25</text><br />
+   <input type="radio"name="ans4">25:16 </input><br />
+   <input type="radio"name="ans4">4:5<br />
+   <input type="radio"name="ans4"id="c4"> 5:4</input><br /><br />
+
+    </div>
+    
+    <div id="sub">
+        
+    
+        <input type="button" name="Submit" id="Submit" value="Submit"onclick="a()" />
+        </div>
+    <div class="first" id="score">
+        
+        
+    </div>
+    <script>
+    function a(){
+        var score=0;
+        if(document.getElementById('c1').checked){
+            score ++;
+        }
+        if(document.getElementById('c2').checked){
+            score ++;
+        }
+        if(document.getElementById('c3').checked){
+            score ++;
+        }
+    if(document.getElementById('c4').checked){
+            score ++;
+        }
+    
+        document.getElementById('score').innerHTML='Congratulation, your score is '+score;
+    }
+        
+        
+    </script>
+    </body>
+</html>
